@@ -13,10 +13,14 @@
     --cor4: #3E3831;
 }
 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 html, body {
     padding: 0;
     margin: 0;
-    height: 97vh;
+    height: 100vh;
 }
 
 header #first-child-header .container {
@@ -36,7 +40,6 @@ header #first-child-header ul {
 header #first-child-header ul li a {
     margin-left: 30px;
     color: var(--cor4);
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.1em;
     font-weight: 500;
     text-decoration: none;
@@ -67,13 +70,6 @@ header #second-child-header .container {
     justify-content: space-between;
 }
 
-@media (max-width: 992px) {
-    header #second-child-header .container {
-      height: 350px;
-      justify-content: center;
-    }
-  }
-
 header #second-child-header .text-home {
     max-width: 500px;
     justify-content: center;
@@ -83,19 +79,17 @@ header #second-child-header .text-home {
 header #second-child-header .text-home p {
     margin: 0;
     color: var(--cor2);
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
 }
 
 header #second-child-header .text-home h1 {
     color: var(--cor4);
-    font-family: 'Montserrat', sans-serif;
     font-size: 3.2em;
     text-transform: uppercase;
     margin: 20px 0 20px 0;
-    background: linear-gradient(45deg, #3E3831, #817868, #6a5638, #000000);
+    background: linear-gradient(45deg, #3E3831, #858482, #615e59, #000000);
     background-size: 400% 100%;
-    animation: degrade 3s linear infinite alternate;
+    animation: degrade 2s linear infinite alternate;
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -113,7 +107,6 @@ header #second-child-header .text-home h1 {
 
 header #second-child-header .text-home button {
     color: var(--cor0);
-    font-family: 'Montserrat', sans-serif;
     background-color: #000000;
     border-radius: 10px;
     display: flex;
@@ -141,13 +134,8 @@ header #second-child-header .text-home button:hover {
     animation-direction: alternate;
     color: #ffffff;
     background-color: var(--cor3);
+    box-shadow: 0 0 15px var(--cor1);
 }
-
-@media (max-width: 992px) {
-    header #second-child-header .text-home .button-projects button {
-      display: none;
-    }
-  }
 
 header #second-child-header .image-home img {
     display: flex;
@@ -155,12 +143,6 @@ header #second-child-header .image-home img {
     width: 500px;
     max-width: 100%;
 }
-
-@media (max-width: 992px) {
-    header #second-child-header .image-home {
-      display: none;
-    }
-  }
 
 header #third-child-header .container {
     display: flex;
@@ -196,13 +178,6 @@ header #third-child-header .container .social-home a {
     }
 }
 
-@media (max-width: 992px) {
-    header #third-child-header .container {
-      display: flex;
-      justify-content: center;
-    }
-  }
-
 header #third-child-header .container .social-home a:hover {
     animation-name: animation-icons;
     animation-duration: .5s;
@@ -218,7 +193,6 @@ header #third-child-header .container .scroll {
 
 header #third-child-header .container .scroll p {
     margin: 0 0 0 10px;
-    font-family: 'Montserrat', sans-serif;
     font-size: .7em;
     text-transform: uppercase;
 }
@@ -229,12 +203,6 @@ header #third-child-header .container .scroll p {
     }
 }
 
-@media (max-width: 992px) {
-    header #third-child-header .container .scroll {
-      display: none;
-    }
-  }
-
 header #third-child-header .container .mail-home {
     display: flex;
     align-items: center;
@@ -243,13 +211,227 @@ header #third-child-header .container .mail-home {
 
 header #third-child-header .container .mail-home p {
     margin: 0 0 0 10px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
 
-@media (max-width: 992px) {
-    header #third-child-header .container .mail-home {
-    display: none;
-    }
+section#page-2 .container {
+    margin-top: 100px;
+    padding: 0;
 }
 
+section#page-2 .text-about h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+section#page-2 .text-about h3 {
+    color: var(--cor4);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+section#page-2 .text-about p {
+    color: var(--cor4);
+    font-size: 1em;
+    margin: 40px 0 20px 0;
+}
+
+section#page-2 .selfie-victor {
+    display: flex;
+    align-items: center;
+}
+
+section#page-2 .selfie-victor img {
+    margin-left: auto;
+    width: 300px;
+}
+
+section#page-3 {
+    height: 100vh;
+    border: 1px solid black;
+}
+
+section#page-3 .container {
+    padding: 0;
+    margin-top: 100px;
+    
+}
+
+section#page-3 .container h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+section#page-4 {
+    height: 100vh;
+}
+
+section#page-4 .container h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 40px 0 40px 0;
+}
+
+section#page-4 .container h6 {
+    font-size: 1.2em;
+    margin: 40px 0 50px 0;
+    text-align: center;
+}
+
+section#page-4 .skills-1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section#page-4 .skills-1 img {
+    width: 70px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+section#page-4 .skills-1 .fast,
+section#page-4 .skills-1 .responsive,
+section#page-4 .skills-1 .intuitive,
+section#page-4 .skills-1 .dynamic {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#page-4 .skills-1 .fast p,
+section#page-4 .skills-1 .responsive p,
+section#page-4 .skills-1 .intuitive p,
+section#page-4 .skills-1 .dynamic p {
+    padding: 10px;
+}
+
+section#page-4 .apps .html5,
+section#page-4 .apps .css3,
+section#page-4 .apps .javascript,
+section#page-4 .apps .bootstrap,
+section#page-4 .apps .figma {
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+section#page-4 .apps .bootstrap,
+section#page-4 .apps .figma {
+    display: flex;
+    align-items: center;
+    
+    flex-direction: row
+}
+
+section#page-4 .apps .html5 img,
+section#page-4 .apps .css3 img,
+section#page-4 .apps .javascript img,
+section#page-4 .apps .bootstrap img,
+section#page-4 .apps .figma img {
+    margin: 0 10px 10px 0;
+}
+
+section#page-4 .apps p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor4);
+}
+
+/* a partir daqui */
+
+@media (max-width: 992px) {
+    header #second-child-header .container {
+      height: 350px;
+      justify-content: center;
+    }
+
+    header #second-child-header .text-home .button-projects button {
+        display: none;
+    }
+
+    header #second-child-header .image-home {
+        display: none;
+    }
+
+    header #third-child-header .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    header #third-child-header .container .scroll {
+        display: none;
+    }
+
+    header #third-child-header .container .mail-home {
+        display: none;
+    }
+
+    section#page-2 .text-about {
+            text-align: center;
+    }
+
+    section#page-2 .selfie-victor img {
+            display: none;
+    }
+
+    section#page-4 .apps {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+    }
+
+    section#page-4 .apps .row {
+        justify-content: center;
+        display: flex;
+    }
+    
+    section#page-4 .apps .html5,
+    section#page-4 .apps .css3,
+    section#page-4 .apps .javascript,
+    section#page-4 .apps .bootstrap,
+    section#page-4 .apps .figma {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0 0 0;
+        padding: 0;
+    }
+
+    section#page-4 .apps .html5 p,
+    section#page-4 .apps .css3 p,
+    section#page-4 .apps .javascript p,
+    section#page-4 .apps .bootstrap p,
+    section#page-4 .apps .figma p {
+        margin: 10px 0 10px 0;
+        
+    }
+}
