@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
 
-
 :root {
     --cor0: #EDEBE8;
     --cor1: #CAC0B0;
@@ -12,391 +11,300 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
-html, body {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    box-sizing: border-box;
-}
-
-header #first-child-page-1 .container {
+header,
+#about-me,
+#projects,
+#skills,
+#contact {
     margin-top: 20px;
-    padding: 0;
 }
 
-header #first-child-page-1 img {
-    width: 60px;
+#about-me h2,
+#projects h2,
+#skills h2,
+#contact h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 60px 0;
 }
 
-header #first-child-page-1 ul {
+header #first-child-header ul {
     margin-left: auto;
 }
 
-header #first-child-page-1 ul li a {
-    margin-left: 30px;
-    color: var(--cor4);
-    font-size: 1.1em;
+header #first-child-header ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
     font-weight: 500;
-    text-decoration: none;
-    position: relative; 
+    color: var(--cor3);
+    margin-left: 30px;
+    position: relative;
 }
 
-header #first-child-page-1 ul li a::after {
+header #first-child-header ul li a::after {
     content: " ";
     width: 0%;
-    height: 2px;
-    background-color: var(--cor2);
+    height: 1px;
+    background-color: var(--cor4);
     position: absolute;
     bottom: 0;
     left: 0;
     transition: 0.5s ease-in-out;
 }
 
-header #first-child-page-1 ul li a:hover::after {
+header #first-child-header ul li a:hover::after {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
     width: 100%;
-    color: var(--cor2);
 }
 
-header #second-child-page-1 .container {
+header #second-child-header .row {
     display: flex;
-    padding: 0;
-    height: 550px;
     align-items: center;
-    justify-content: space-between;
+    margin: 50px 0 50px 0;
 }
 
-header #second-child-page-1 .text-home {
-    max-width: 500px;
-}
-
-header #second-child-page-1 .text-home p {
-    margin: 0;
-    color: var(--cor2);
+header #second-child-header .container .text-and-button h6 {
+    color: var(--cor3);
     font-size: 1.3em;
 }
 
-header #second-child-page-1 .text-home h1 {
-    color: var(--cor4);
-    font-size: 3.2em;
+header #second-child-header .container .text-and-button h2 {
+    font-size: 3em;
+    font-weight: bold;
     text-transform: uppercase;
     margin: 20px 0 20px 0;
-    background: linear-gradient(45deg, #3E3831, #858482, #615e59, #000000);
-    background-size: 400% 100%;
-    animation: degrade 2s linear infinite alternate;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
-header #second-child-page-1 .text-home button {
-    color: var(--cor0);
-    background-color: #000000;
-    border-radius: 10px;
+header #second-child-header .text-and-button p {
+    color: var(--cor3);
+    font-size: 1.3em;
+}
+
+header #second-child-header .text-and-button button {
     display: flex;
-    margin: 20px 20px 0 0;
-    margin-left: auto;
+    text-transform: uppercase;
     padding: 10px 20px 10px 20px;
+    margin-top: 30px;
 }
 
-header #second-child-page-1 .text-home button:hover {
+header #second-child-header .text-and-button button:hover {
+    color: var(--cor0);
+    background-color: var(--cor3);
+    box-shadow: 0 0 15px var(--cor1);
     animation-name: animation;
     animation-duration: 0.6s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    color: #ffffff;
-    background-color: var(--cor3);
-    box-shadow: 0 0 15px var(--cor1);
 }
 
-header #second-child-page-1 .image-home img {
+header #second-child-header .image-home {
     display: flex;
-    margin-left: auto;
-    width: 500px;
-    max-width: 100%;
+    justify-content: end;
 }
 
-header #third-child-page-1 .container {
-    display: flex;
-    height: 70px;
+header #third-child-header .social-home a {
+    margin-left: 5px;
+    display: inline-block;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
 }
 
-header #third-child-page-1 .container img, 
-header #third-child-page-1 .container p, 
-header #third-child-page-1 .container a {
+header #third-child-header .scroll {
     display: flex;
     align-items: center;
+    justify-content: center;    
 }
 
-header #third-child-page-1 .container img {
-    width: 30px;    
-}
-
-header #third-child-page-1 .container .social-home {
-    display: flex;
-    align-items: center;
-}
-
-header #third-child-page-1  .container .social-home a {
-    margin-right: 10px;
-}
-
-header #third-child-page-1 .container .social-home a:hover {
-    animation-name: animation-icons;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-}
-
-header #third-child-page-1 .container .scroll {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: bouncing .7s ease-in-out alternate infinite;
-}
-
-header #third-child-page-1 .container .scroll p {
-    margin: 0 0 0 10px;
-    font-size: .7em;
+header #third-child-header .scroll p {
+    margin: 0;   
     text-transform: uppercase;
+    font-weight: 100;
+    font-size: .7em;
 }
 
-header #third-child-page-1 .container .mail-home {
+header #third-child-header .mail-home {
     display: flex;
     align-items: center;
     justify-content: end;
 }
 
-header #third-child-page-1 .container .mail-home p {
+header #third-child-header .mail-home p {
     margin: 0 0 0 10px;
-    font-weight: 500;
 }
 
-/* --------------------------------------------------------------------------------------------------------------------- */
+/* PÁGINA 2 PÁGINA 2 PÁGINA 2 PÁGINA 2 PÁGINA 2 PÁGINA 2 PÁGINA 2 PÁGINA 2 PÁGINA 2 PÁGINA 2 PÁGINA 2 PÁGINA 2 PÁGINA 2 PÁGINA 2 PÁGINA 2 */
 
-main #first-child-page-2 {
-    margin-top: 100px;
-    padding: 0;
-}
-
-main #first-child-page-2 .text-about h2 {
-    font-size: 3em;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-main #first-child-page-2 .text-about h3 {
-    color: var(--cor4);
+main section#about-me .first-child-about-me h3 {
     font-size: 1.5em;
-    font-weight: bold;
-    margin-top: 40px;
+    font-weight: 600;
+    margin: 30px 0;
+    color: var(--cor3);
 }
 
-main #first-child-page-2 .text-about p {
-    color: var(--cor4);
+main section#about-me .first-child-about-me p {
     font-size: 1em;
-    margin: 40px 0 20px 0;
+    margin: 30px 0 30px 0;
+    color: var(--cor3);
 }
 
-main #first-child-page-2 .selfie-victor {
+main #about-me .row .second-child-about-me {
     display: flex;
     align-items: center;
 }
 
-main #first-child-page-2 .selfie-victor img {
-    margin-left: auto;
+main section#about-me .second-child-about-me img {
     width: 300px;
-}
-
-/* --------------------------------------------------------------------------------------------------------------------- */
-
-main #first-child-page-3 {
-    padding: 0;
-    margin-top: 100px;
-}
-
-main #first-child-page-3 h2 {
-    font-size: 3em;
-    font-weight: bold;
-    margin-top: 20px;
-}
-/* --------------------------------------------------------------------------------------------------------------------- */
-
-main #first-child-page-4 h2 {
-    font-size: 3em;
-    font-weight: bold;
-    margin: 30px 0 40px 0;
-}
-
-main #first-child-page-4 h6,
-main #second-child-page-4 h6 {
-    font-size: 1.2em;
-    margin: 40px 0 20px 0;
-    text-align: center;
-}
-
-main #first-child-page-4 .skills-1 {
     display: flex;
-    justify-content: space-evenly;
+    margin-left: auto;
+    
+}
+
+/* PÁGINA 3 PÁGINA 3 PÁGINA 3 PÁGINA 3 PÁGINA 3 PÁGINA 3 PÁGINA 3 PÁGINA 3 PÁGINA 3 PÁGINA 3 PÁGINA 3 PÁGINA 3 PÁGINA 3 PÁGINA 3 PÁGINA 3 */
+
+main #projects .first-child-projects p {
+    font-size: 1em;
+    margin: 30px 0 30px 0;
+    color: var(--cor3);
+}
+
+/* PÁGINA 4 PÁGINA 4 PÁGINA 4 PÁGINA 4 PÁGINA 4 PÁGINA 4 PÁGINA 4 PÁGINA 4 PÁGINA 4 PÁGINA 4 PÁGINA 4 PÁGINA 4 PÁGINA 4 PÁGINA 4 PÁGINA 4 */
+
+main #skills h3 {
+    font-size: 1.2em;
+    margin: 30px 0 30px 0;
+    color: var(--cor3);
+    display: flex;
+    justify-content: center;
+}
+
+main #skills .first-child-skills .skills-1 {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     margin: 10px;
     font-size: .8em;
+    
 }
 
-main #first-child-page-4 .skills-1 .fast,
-main #first-child-page-4 .skills-1 .responsive,
-main #first-child-page-4 .skills-1 .intuitive,
-main #first-child-page-4 .skills-1 .dynamic {
-    width: 270px;
-}
-
-main #first-child-page-4 .skills-1 img {
-    width: 40px;
+main #skills .first-child-skills .skills-1 img {
+    width: 30px;
     margin-bottom: 10px;
 }
 
-main #second-child-page-4 .skills-2 {
-    
-  
+main #skills .second-child-skills .skills-2 ul {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--cor2);
 }
 
-main #second-child-page-4 .skills-2 ul {
-    display: contents;
-    flex-direction: row;
+main #skills .second-child-skills .skills-2 ul li {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    margin: 50px 0;
 }
 
-main #second-child-page-4 .skills-2 ul li {
-    list-style: none;
+main #skills .third-child-skills .skills-3 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+main #skills .third-child-skills .skills-3 ul li {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+/* PÁGINA 5 PÁGINA 5 PÁGINA 5 PÁGINA 5 PÁGINA 5 PÁGINA 5 PÁGINA 5 PÁGINA 5 PÁGINA 5 PÁGINA 5 PÁGINA 5 PÁGINA 5 PÁGINA 5 PÁGINA 5 PÁGINA 5 */
+
+main #contact .first-child-contact {
+    font-size: 2em;
+    font-weight: normal;
+}
+
+main #contact .second-child-contact {
+    font-size: 1.1em;
+    margin-top: 50px;
+}
+
+main #contact .second-child-contact img {
+    display: inline-flex;
+    margin-right: 10px;
+    width: 35px;
+}
+
+main #contact .third-child-contact {
     display: flex;
     align-items: center;
-    margin: 10px;
-    width: 400px;
-    font-size: 1em;
+    margin-left: auto;
+    margin-top: 50px;
+    font-size: 1.1em;
+}
+
+main #contact .third-child-contact button {
+    display: flex;
+    margin-left: auto;
     text-transform: uppercase;
+    padding: 10px 40px 10px 40px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
 
+main #contact .third-child-contact button:hover {
+    color: var(--cor0);
+    background-color: var(--cor3);
+    box-shadow: 0 0 15px var(--cor1);
+    animation-name: animation;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 
+/* @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA @MEDIA */
 
-
-
-
-
-
-
-
-
-
-
-
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--cor4);
-}
+@media (max-width: 768px) {
+    main #skills .first-child-skills .skills-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px 80px;
+    }
+} 
 
 @media (max-width: 992px) {
-    header #second-child-page-1 .container {
-      height: 350px;
-      justify-content: center;
-    }
-
-    header #second-child-page-1 .text-home .button-projects button {
+    header #second-child-header .image-home img,
+    header #third-child-header .scroll,
+    header #third-child-header .mail-home {
         display: none;
     }
 
-    header #second-child-page-1 .image-home {
-        display: none;
-    }
-
-    header #third-child-page-1 .container {
+    header #third-child-header .social-home {
         display: flex;
         justify-content: center;
     }
-
-    header #third-child-page-1 .container .scroll {
-        display: none;
-    }
-
-    header #third-child-page-1 .container .mail-home {
-        display: none;
-    }
-
-    main #first-child-page-2 .text-about {
-        text-align: center;
-    }
-
-    main #first-child-page-2 .selfie-victor img {
-        display: none;
-    }
-
-    main #first-child-page-4 .skills-1 {
-        display: contents;
-        flex-direction: row;
-    }
-
-    main #first-child-page-4 .skills-1 .fast,
-    main #first-child-page-4 .skills-1 .responsive,
-    main #first-child-page-4 .skills-1 .intuitive,
-    main #first-child-page-4 .skills-1 .dynamic {
-        margin-bottom: 20px;
-        padding: 5px;
-        
-    }
-
-    main #second-child-page-4 .skills-2 ul {
-        display: flex;
-        flex-direction: column;
-        border: 1px solid black;
-    }
-
-    main #second-child-page-4 .skills-2 ul li {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        width: 200px;
-        margin: 3px 30px 0 0;
-        margin-left: 150px;
-        border: 1px solid red;
+    
+    main #skills .second-child-skills .skills-2 ul li {
+        font-size: .8em;
     }
 }
-
-@keyframes degrade {
-    0% {
-        background-position-x: 0%;
-    }
-
-    100% {
-        background-position: 100%;
-    }
-}
-
-@keyframes animation {
-    0% {
-        transform: scale(1); 
-    }
-
-    100% {
-        transform: scale(1.05);
-    }
-}
-
-@keyframes animation-icons {
-    0% {
-        transform: scale(1); 
-    }
-
-    100% {
-        transform: scale(1.3);
-    }
-}
-
-@keyframes bouncing {
-    to {
-        transform: translateY(5px);
+@media (max-width: 1200px) {
+    main section#about-me .second-child-about-me img {
+        display: none; 
     }
 }
