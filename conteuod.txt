@@ -1,0 +1,69 @@
+"LOGO" PORTFÓLIO      "Home" "Sobre Mim" "Projetos" "Habilidades" "Contatos"
+
+---------------------------------------------------------------------------------------
+
+BEM-VINDO.
+
+Olá! Meu nome é Victor, 
+tenho 27 anos, moro em São Paulo e 
+sou um desenvolvedor web em construção.
+
+"Download CV" "Veja meus projetos"
+
+---------------------------------------------------------------------------------------
+
+Um Pouco Sobre Mim
+
+Sempre gostei de criar coisas novas e faço isso no computador desde que abri o Paint. A arte e a tecnologia 
+sempre me fascinaram e eu nunca tive medo de tentar, seja no Paint, Photoshop, Sketch ou CSS.
+
+Meu primeiro contato com desenvolvimento e design aconteceu na adolescência (editar temas personalizados do tumblr 
+me ensinou muito sobre HTML e CSS!), porém no início da minha trajetória profissional, precisei seguir 
+outros caminhos. Na minha última faculdade, tive contato com algumas tecnologias que permitiram que eu 
+realizasse trabalhos como Freelancer atuando como modelador 3D, renderista, diagramador, design e social media.
+
+Atualmente estou cursando Gestão da Tecnologia da Informação na Universidade Estácio e estou dedicando tempo 
+e esforço em cursos para me capacitar como desenvolvedor. Estou sempre em busca de novas oportunidades para 
+colaborar em projetos desafiadores, onde eu possa aplicar meus conhecimentos e continuar aprimorando minhas 
+habilidades técnicas.
+ 
+---------------------------------------------------------------------------------------
+
+Veja Meus Projetos
+
+Aqui estão alguns projetos pessoais. Cada trabalho, independente do tamanho ou nível de complexidade, 
+foi importante para o meu aprendizado e fico muito contente em reconhecer minha evolução a cada dia, 
+podendo assim criar projetos cada vez maiores. 
+
+- Destaques
+
+- Todos os projetos
+
+---------------------------------------------------------------------------------------
+
+Minhas Habilidades
+
+"HTML" "CSS" "JavaScript" "Bootstrap" "Figma" "Git/ Github" "Design responsivo" "Photoshop" "My SQL" 
+
+---------------------------------------------------------------------------------------
+
+Formas de Contato
+
+Tem uma pergunta, proposta ou apenas deseja dizer um oi? Para me encontrar é bem simples.
+
+"E-mail" "Telefone" "Linkedin" "Github"
+
+---------------------------------------------------------------------------------------
+
+"LOGO"
+
+Agradeço a visita ao meu portfólio e aguardo seu contato. :)
+
+Criado por Victor Moreira.
+
+---------------------------------------------------------------------------------------
+
+Background: quadriculado, discreto.
+
+Fontes: 2 fontes, uma para o título e outra para o conteúdo.
+

@@ -5,201 +5,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="imagens/page-1/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Victor Moreira | Portfólio</title>
 </head>
 <body>
-    <header>
-        <div id="first-child-header">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <!-- logo -->
-                    <img src="imagens/page-1/logo-victor-black.png" alt="logo-victor">
-                    <!-- menu sandwich -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- menu principal -->
-                    <div class="collapse navbar-collapse" id="menu-principal">
-                        <ul class="navbar-nav me-0 mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Sobre mim</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Habilidades</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-                        </ul>
-                    </div>
+    <header id="header">
+        <div class="container">
+            <div class="nav-list">
+                <!-- logo -->
+                <div class="logo-icon">
+                    <a href="index.html"><img src="imagens/page-1/logo-victor.png" alt="logo-victor"></a> 
+                    <p>Portfólio</p>
+                </div>
+                <!-- menu principal -->
+                <nav>
+                    <ul class="links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                    </ul>
                 </nav>
-            </div>
-        </div>
-
-        <div id="second-child-header">
-            <div class="container">
-                <div class="row">
-                    <div class="text-and-button col-lg-6">
-                        <h6>Olá! Meu nome é </h6>
-                        <h2>Victor Moreira</h2>
-                        <p>Um desenvolvedor em contrução, apaixonado por criar interfaces impactantes e eficientes, focando na melhor experiência do usuário.</p>
-                        <button type="button" class="btn btn-outline-secondary">Meus projetos</button>
-                    </div>
-                    <div class="image-home col-lg-6">
-                        <img src="imagens/page-1/imagem-provisoria-capa.png" alt="imagem-provisoria">
-                    </div>
+                <!-- menu contato -->
+                <a href="#contact" class="btn-contact"><button>Contato</button></a>
+                <!-- menu sandwich icon -->
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
-        </div>
-
-        <div id="third-child-header">
-            <div class="container">
-                <div class="row">
-                    <!-- links para as redes sociais -->
-                    <div class="social-home col-lg-4">
-                        <a href="https://github.com/victormoreirak" target="_blank" rel="external"><img src="imagens/page-1/github-logo-36.png" alt="git-hub-icon"></a>
-                        <a href="https://www.linkedin.com/in/victormoreirak/" target="_blank" rel="external"><img src="imagens/page-1/linkedin-logo-72.png" alt="linkedin-icon"></a>
-                        <a href="https://api.whatsapp.com/send/?phone=5511954809679&text&type=phone_number&app_absent=0" target="_blank" rel="external"><img src="imagens/page-1/whatsapp-logo-36.png" alt="whatsapp-icon"></a>
-                    </div>
-                    <!-- indicação de scroll down -->
-                    <div class="scroll col-lg-4">
-                        <img src="imagens/page-1/chevrons-down-regular-36.png" alt="arrow-down">
-                        <p>scroll</p>
-                    </div>
-                    <!-- e-mail para contato -->
-                    <div class="mail-home col-lg-4">
-                        <img src="imagens/page-1/envelope-regular-36.png" alt="mail-icon">
-                        <p>victormoreirafin@gmail.com</p>
-                    </div>
-                </div>
+            <!-- dropdown menu -->
+            <div class="dropdown_menu">
+                <li><a href="home">Home</a></li>
+                <li><a href="about">Sobre</a></li>
+                <li><a href="projects">Projetos</a></li>
+                <li><a href="skills">Habilidades</a></li>
+                <li><a href="#" class="btn-contact"><button>Contato</button></a></li>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="about-me">
+        <section id="home">
+            <div class="container">
+                <div class="first-child-home justify-content-evenly">
+                    <div class="row align-items-center">
+                        <div class="text-home col-md-12 col-lg-6">
+                            <h1>Bem-vindo.</h1>
+                            <h3>Olá! Meu nome é <strong>Victor Moreira</strong>, <br> 
+                                tenho 27 anos, moro em São Paulo e <br>
+                                sou um <strong>desenvolvedor web</strong> em construção.</h3>
+                            <button type="button" class="btn">Download CV</button>
+                            <button type="button" class="btn">Meus Projetos</button>
+                        </div>
+                        <div class="image-home col-lg-6">
+                            <img src="imagens/page-1/imagem-provisoria-capa.png" alt="imagem-provisoria">
+                        </div>
+                    </div>
+                </div>
+                <div class="second-child-home">
+                    <div class="container">
+                        <div class="row">
+                            <div class="social-home col-md-12 col-lg-4">
+                                <a href="https://github.com/victormoreirak" target="_blank"><img src="imagens/page-1/github-logo-36.png" alt="github-icon"></a>
+                                <a href="https://www.linkedin.com/in/victormoreirak/" target="_blank"><img src="imagens/page-1/linkedin-logo-72.png" alt="linkedin-icon"></a>
+                                <a href="https://api.whatsapp.com/send/?phone=5511954809679&text&type=phone_number&app_absent=0" target="_blank"><img src="imagens/page-1/whatsapp-logo-36.png" alt="whatsapp-icon"></a>
+                            </div>
+                            <div class="scroll-down col-4">
+                                <img src="imagens/page-1/chevrons-down-regular-36.png" alt="arrow-down">
+                                <p>scroll</p>
+                            </div>
+                            <div class="mail-home col-4">
+                                <a href="#"><img src="imagens/page-1/envelope-regular-36.png" alt="mail-icon"></a>
+                                <p>victormoreirafin@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="about">
             <div class="container">
                 <div class="row">
-                    <div class="first-child-about-me col-md-12 col-xl-6">
-                        <h2>Sobre mim</h2>
-                        <h3>Um desenvolvedor, criador e solucionador de problemas.</h3>
-                        <p>Sempre gostei de criar coisas novas e faço isso no computador desde que abri o Paint. A arte e a tecnologia sempre me fascinaram e eu nunca tive medo de tentar, seja no Paint, Photoshop, Sketch ou CSS.</p>
-                        <p>Atualmente estou cursando Gestão da Tecnologia da Informação na Universidade Estácio e estou dedicando tempo e esforço em cursos para me capacitar como desenvolvedor. Busco novas oportunidades para colaborar em projetos desafiadores, onde eu possa aplicar meus conhecimentos e continuar aprimorando minhas habilidades técnicas.</p>
-                        <p>O que mais me entusiasma em trabalhar com desenvolvimento é poder projetar e criar coisas que tenham propósito e resolvam problemas reais. Apoiar-se na pesquisa e percepção do cliente, encontrar os problemas certos para resolver, entregar esse valor o mais rápido possível, aprender com isso e melhorar esse valor ao longo do tempo é a chave para ser um ótimo profissional.</p>
+                    <div class="first-child-about col-12">
+                        <h2><span>Um pouco </span>sobre mim.</h2>
                     </div>
-                    <div class="second-child-about-me col-lg-6 col-xl-6">
-                        <img src="imagens/page-2/victor-perfil.png" alt="perfil-victor">
+                    <div class="second-child-about col-lg-6">
+                        
+                        <p>Sempre gostei de criar coisas novas e faço isso no computador desde que abri o Paint. A arte e a tecnologia sempre me fascinaram e eu nunca tive medo de tentar, seja no Paint, Photoshop, Sketch ou CSS.</p>
+
+                        <p>Meu primeiro contato com desenvolvimento e design aconteceu na adolescência (editar temas personalizados do tumblr me ensinou muito sobre HTML e CSS!), porém no início da minha trajetória profissional, precisei seguir outros caminhos. Na minha última faculdade, tive contato com algumas tecnologias que permitiram que eu realizasse trabalhos como Freelancer atuando como modelador 3D, renderista, diagramador, design e social media.</p>
+
+                        <p>Atualmente estou cursando Gestão da Tecnologia da Informação na Universidade Estácio e estou dedicando tempo e esforço em cursos para me capacitar como desenvolvedor. Estou sempre em busca de novas oportunidades para colaborar em projetos desafiadores, onde eu possa aplicar meus conhecimentos e continuar aprimorando minhas habilidades técnicas.</p>
+                    </div>
+                    <div class="third-child-about col-lg-6">
+                        <img src="imagens/page-2/victor-perfil.png" alt="selfie-victor">
                     </div>
                 </div>
             </div>
         </section>
-
+        <hr>
         <section id="projects">
             <div class="container">
-                <div class="first-child-projects">
-                    <h2>Projetos</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus natus impedit sapiente esse, voluptate unde dignissimos iusto eaque optio repellendus, ullam libero eum similique, omnis minus earum velit quo.</p>
+                <div class="first-child-projects col-7">
+                    <h2><span>Veja meus </span>projetos.</h2>
+                    <h4>Aqui estão alguns projetos pessoais. Cada trabalho, independente do tamanho ou nível de complexidade, foi importante para o meu aprendizado e fico muito contente em acompanhar minha evolução a cada dia, podendo assim criar projetos cada vez maiores.</h4>
                 </div>
-                <div class="second-child-projects">
-
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="second-child-projects col-6">
+                        <h3>Destaques</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio magni, odit itaque iusto expedita neque impedit fuga esse vel cum maiores id fugiat nemo cumque ipsum aperiam. Odio, deserunt nobis.
+                    </div>
+                    <div class="third-child-projects col-6">
+                        <h3>Todos os projetos</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fugiat exercitationem quo laboriosam, enim laborum in animi repellendus quas culpa alias vitae voluptas sint esse doloremque minima molestiae similique id.
+                    </div>
                 </div>
             </div>
         </section>
-
+        <hr>
         <section id="skills">
             <div class="first-child-skills">
-                <div class="container">
-                    <div class="row">
-                        <h2>Habilidades</h2>
-                        <h3>Minha missão é criar projetos:</h3>
-                        <div class="skills-1">
-                            <div class="fast col-3">
-                                <img src="imagens/page-4/velocidade-icon.png" alt="fast-icon">
-                                <p><strong>rápidos</strong>, <br>com interações e carregamentos sem atrasos.</p>
+                <div class="container col-12">
+                    <h2><span>Minhas </span>habilidades.</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="second-child-skills col-3">
+                        <div class="container justify-content-center">
+                            <h4>Minha missão é criar projetos</h4>
+                            <div>
+                                <div class="skills-1">
+                                    <img src="imagens/page-4/velocidade-icon.png" alt="fast-icon">
+                                    <p><strong>RÁPIDOS</strong></p>
+                                </div>
+                                <p>com interações e carregamentos sem atrasos.</p>
                             </div>
-                            <div class="responsive col-3">
-                                <img src="imagens/page-4/responsividade-icon.png" alt="responsive-icon">
-                                <p><strong>responsivos</strong>, <br>com layouts que irão funcionar em qualquer dispositivo, grande ou pequeno.</p>
+                
+                            <div>
+                                <div class="skills-1">
+                                    <img src="imagens/page-4/responsividade-icon.png" alt="responsive-icon">
+                                    <p><strong>RESPONSIVOS</strong></p>
+                                </div>
+                                <p>com layouts que irão funcionar em qualquer dispositivo, grande ou pequeno.</p>
                             </div>
-                            <div class="intuitive col-3">
-                                <img src="imagens/page-4/intuitivo-icon.png" alt="intuitive-icon">
-                                <p><strong>intuitivos</strong>, <br>de fácil usabilidade, valorizando a experiência do usuário.</p>
+                
+                            <div>
+                                <div class="skills-1">
+                                    <img src="imagens/page-4/intuitivo-icon.png" alt="intuitive-icon">
+                                    <p><strong>INTUITIVOS</strong></p>
+                                </div>
+                                <p>de fácil usabilidade, valorizando a experiência do usuário.</p>
                             </div>
-                            <div class="dynamic col-3">
-                                <img src="imagens/page-4/dinamico-icon.png" alt="dynamic-icon">
-                                <p><strong>dinâmicos</strong>, <br>dando mais vida a página, pois os sites não precisam ser estáticos.</p>
+                
+                            <div>
+                                <div class="skills-1">
+                                    <img src="imagens/page-4/dinamico-icon.png" alt="dynamic-icon">
+                                    <p><strong>DINÂMICOS</strong></p>
+                                </div>
+                                <p>dando mais vida a página, pois os sites não precisam ser estáticos.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="second-child-skills">
-                <div class="container">
-                    <div class="row">
-                        <h3>E para isso, invisto tempo e esforço em programas como:</h3>
-                        <div class="skills-2">
-                            <ul>
-                                <li class="col-3"><img src="imagens/page-4/html5-logo-72.png" alt="html5-icon">
-                                    <p>HTML5</p>
-                                </li>
-                                <li class="col-3"><img src="imagens/page-4/css3-logo-72.png" alt="css3-icon">
-                                    <p>CSS3</p>
-                                </li>
-                                <li class="col-3"><img src="imagens/page-4/javascript-logo-72.png" alt="javascript-icon">
-                                    <p>JavaScript</p>
-                                </li>
-                                <li class="col-3"><img src="imagens/page-4/bootstrap-logo-72.png" alt="bootstrap-icon">
-                                    <p>Bootstrap</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="third-child-skills">
-                <div class="container">
-                    <div class="skills-3">
-                        <ul>
-                            <li class="col-3"><img src="imagens/page-4/photoshop-logo.png" alt="photoshop-icon">
-                                <p>Photoshop</p>
-                            </li>
-                            <li class="col-3"><img src="imagens/page-4/my-sql-icon.png" alt="my-sql-icon">
-                                <p>My SQL</p>
-                            </li>
-                            <li class="col-3"><img src="imagens/page-4/figma-icon.png" alt="figma-icon">
-                                <p>Figma</p>
-                            </li>
-                        </ul>
+                    <div class="third-child-skills col-9">
+                        <h4>E para isso, invisto tempo e esforço em tecnologias como:</h4>
                     </div>
                 </div>
             </div>
         </section>
-        
+        <hr>
         <section id="contact">
             <div class="container">
-                <h2>Contato</h2>
-                <div class="first-child-contact col-lg-7">
-                    <p>I'M ALWAYS OPEN TO DISCUSS YOUR PROJECT AND TALK ABOUT NEW THING</p>
+                <div class="first-child-contact col-6">
+                    <h2><span>Formas de </span>contato.</h2>
+                    <h4>Tem uma pergunta, proposta ou apenas deseja dizer um oi? <br>
+                        Para me encontrar é bem simples.</h4>
                 </div>
-                <div class="second-child-contact col-lg-6">
-                    <p>Entre em contato pelas minhas redes</p>
-                    <a href="https://github.com/victormoreirak" target="_blank" rel="external"><img src="imagens/page-5/github-logo-36.png" alt="github-icon"></a>
-                    <a href="https://www.linkedin.com/in/victormoreirak/" target="_blank" rel="external"><img src="imagens/page-5/linkedin-logo-72.png" alt="linkedin-icon"></a>
-                    <a href="https://api.whatsapp.com/send/?phone=5511954809679&text&type=phone_number&app_absent=0" target="_blank" rel="external"><img src="imagens/page-5/whatsapp-logo-36.png" alt="whatsapp-icon"></a>
-                </div>
-                <div class="third-child-contact">
-                    <div class="col-6">
-                        <p>Ou envie um e-mail para</p>
-                        <p><strong>victormoreirafin@gmail.com</strong></p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="second-child-contact col-6">
+                        <h6>Me siga nas redes sociais</h6>
+                        <div>
+                            <a href="#">Github /</a> 
+                            <a href="#">Linkedin /</a> 
+                            <a href="#">Whatsapp</a>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <button type="button" class="btn btn-outline-secondary">CV</button>
+                    <div class="third-child-contact col-6">
+                        <h6>Ou envie um e-mail para</h6>
+                        <div>
+                            <a href="#"><img src="imagens/page-1/envelope-regular-36.png" alt="mail-icon">victormoreirafin@gmail.com</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="first-child-footer col-6">
+                        <p>Criado por <strong>Victor Moreira</strong>.</p>
+                        <p>Agradeço a visita ao meu portfólio e aguardo seu contato. :)</p>
+                    </div>
+                    <div class="second-child-footer col-6">
+                        <img src="imagens/footer/logo-victor.png" alt="logo-victor">
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
