@@ -36,8 +36,13 @@ foi importante para o meu aprendizado e fico muito contente em reconhecer minha 
 podendo assim criar projetos cada vez maiores. 
 
 - Destaques
+	- Portfólio
+	- Projeto futuro
 
 - Todos os projetos
+	- animated-login-and-registration-form
+	- Relógio Digital
+	- Site Mateus Santana
 
 ---------------------------------------------------------------------------------------
 

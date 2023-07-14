@@ -16,7 +16,7 @@
             <div class="nav-list">
                 <!-- logo -->
                 <div class="logo-icon">
-                    <a href="index.html"><img src="imagens/page-1/logo-victor.png" alt="logo-victor"></a> 
+                    <a href="index.html"><img src="imagens/home/logo-victor.png" alt="logo-victor"></a> 
                     <p>Portfólio</p>
                 </div>
                 <!-- menu principal -->
@@ -37,47 +37,52 @@
             </div>
             <!-- dropdown menu -->
             <div class="dropdown_menu">
-                <li><a href="home">Home</a></li>
-                <li><a href="about">Sobre</a></li>
-                <li><a href="projects">Projetos</a></li>
-                <li><a href="skills">Habilidades</a></li>
-                <li><a href="#" class="btn-contact"><button>Contato</button></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact" class="btn-contact"><button>Contato</button></a></li>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="home">
-            <div class="container">
-                <div class="first-child-home justify-content-evenly">
+        <section id="home" class="sec-1 show-animate">
+            <div class="container animate">
+                <div class="first-child-home">
                     <div class="row align-items-center">
-                        <div class="text-home col-md-12 col-lg-6">
+                        <!-- apresentação -->
+                        <div class="text-home col-lg-6 offset-1">
                             <h1>Bem-vindo.</h1>
                             <h3>Olá! Meu nome é <strong>Victor Moreira</strong>, <br> 
                                 tenho 27 anos, moro em São Paulo e <br>
                                 sou um <strong>desenvolvedor web</strong> em construção.</h3>
-                            <button type="button" class="btn">Download CV</button>
-                            <button type="button" class="btn">Meus Projetos</button>
+                            <a href="#"><button type="button" class="btn">Download CV</button></a>
+                            <a href="#projects"><button type="button" class="btn">Meus Projetos</button></a>
                         </div>
-                        <div class="image-home col-lg-6">
-                            <img src="imagens/page-1/imagem-provisoria-capa.png" alt="imagem-provisoria">
+                        <!-- imagem apresentação -->
+                        <div class="image-home col-lg-5">
+                            <lottie-player src="https://lottie.host/20421fc8-9c25-462d-b6b4-777286ac3839/TDYJIpgiNw.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></lottie-player>
                         </div>
                     </div>
                 </div>
                 <div class="second-child-home">
+                    <!-- redes sociais -->
                     <div class="container">
                         <div class="row">
                             <div class="social-home col-md-12 col-lg-4">
-                                <a href="https://github.com/victormoreirak" target="_blank"><img src="imagens/page-1/github-logo-36.png" alt="github-icon"></a>
-                                <a href="https://www.linkedin.com/in/victormoreirak/" target="_blank"><img src="imagens/page-1/linkedin-logo-72.png" alt="linkedin-icon"></a>
-                                <a href="https://api.whatsapp.com/send/?phone=5511954809679&text&type=phone_number&app_absent=0" target="_blank"><img src="imagens/page-1/whatsapp-logo-36.png" alt="whatsapp-icon"></a>
+                                <a href="https://github.com/victormoreirak" target="_blank" class="github"><img src="imagens/home/github-logo-36.png" alt="github-icon"></a>
+                                <a href="https://www.linkedin.com/in/victormoreirak/" target="_blank" class="linkedin"><img src="imagens/home/linkedin-logo-72.png" alt="linkedin-icon"></a>
+                                <a href="https://api.whatsapp.com/send/?phone=5511954809679&text&type=phone_number&app_absent=0" target="_blank"><img src="imagens/home/whatsapp-logo-36.png" alt="whatsapp-icon"></a>
                             </div>
+                            <!-- indicação scroll -->
                             <div class="scroll-down col-4">
-                                <img src="imagens/page-1/chevrons-down-regular-36.png" alt="arrow-down">
+                                <img src="imagens/home/chevrons-down-regular-36.png" alt="arrow-down">
                                 <p>scroll</p>
                             </div>
+                            <!-- e-mail -->
                             <div class="mail-home col-4">
-                                <a href="#"><img src="imagens/page-1/envelope-regular-36.png" alt="mail-icon"></a>
+                                <a href="#contact"><img src="imagens/home/envelope-regular-36.png" alt="mail-icon"></a>
                                 <p>victormoreirafin@gmail.com</p>
                             </div>
                         </div>
@@ -85,13 +90,14 @@
                 </div>
             </div>
         </section>
-        <hr>
-        <section id="about">
-            <div class="container">
+        
+        <section id="about" class="sec-2 show-animate">
+            <div class="container animate">
                 <div class="row">
                     <div class="first-child-about col-12">
                         <h2><span>Um pouco </span>sobre mim.</h2>
                     </div>
+                    <!-- sobre mim -->
                     <div class="second-child-about col-lg-6">
                         
                         <p>Sempre gostei de criar coisas novas e faço isso no computador desde que abri o Paint. A arte e a tecnologia sempre me fascinaram e eu nunca tive medo de tentar, seja no Paint, Photoshop, Sketch ou CSS.</p>
@@ -100,114 +106,149 @@
 
                         <p>Atualmente estou cursando Gestão da Tecnologia da Informação na Universidade Estácio e estou dedicando tempo e esforço em cursos para me capacitar como desenvolvedor. Estou sempre em busca de novas oportunidades para colaborar em projetos desafiadores, onde eu possa aplicar meus conhecimentos e continuar aprimorando minhas habilidades técnicas.</p>
                     </div>
+                    <!-- selfie victor -->
                     <div class="third-child-about col-lg-6">
-                        <img src="imagens/page-2/victor-perfil.png" alt="selfie-victor">
+                        <img src="imagens/about/victor-perfil.png" alt="selfie-victor">
                     </div>
                 </div>
             </div>
         </section>
-        <hr>
-        <section id="projects">
-            <div class="container">
-                <div class="first-child-projects col-7">
+        
+        <section id="projects" class="sec-3 show-animate">
+            <div class="container animate">
+                <div class="first-child-projects col-md-12 col-lg-7">
                     <h2><span>Veja meus </span>projetos.</h2>
                     <h4>Aqui estão alguns projetos pessoais. Cada trabalho, independente do tamanho ou nível de complexidade, foi importante para o meu aprendizado e fico muito contente em acompanhar minha evolução a cada dia, podendo assim criar projetos cada vez maiores.</h4>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="second-child-projects col-6">
-                        <h3>Destaques</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio magni, odit itaque iusto expedita neque impedit fuga esse vel cum maiores id fugiat nemo cumque ipsum aperiam. Odio, deserunt nobis.
-                    </div>
-                    <div class="third-child-projects col-6">
-                        <h3>Todos os projetos</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fugiat exercitationem quo laboriosam, enim laborum in animi repellendus quas culpa alias vitae voluptas sint esse doloremque minima molestiae similique id.
+                <!-- cards dos projetos -->
+                <div class="second-child-projects col-12">
+                    <div class="wrapper">
+                        <!-- projeto: portfólio -->
+                        <div class="card">
+                            <img src="imagens/projects/portfolio-capa.png" alt="capa-portfolio">
+                            <div class="info">
+                                <h5>Portfólio</h5>
+                                <p>Projeto criado do zero onde eu mostro parte do meu trabalho e falo um pouco sobre mim.</p>
+                                <a href="#" class="btn"><buton>Ver detalhes</buton></a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/projects/soon-capa.png" alt="capa-portfolio">
+                            <div class="info">
+                                <h5>Heading</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn"><buton>Read More</buton></a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/projects/soon-2-capa.png" alt="capa-portfolio">
+                            <div class="info">
+                                <h5>Heading</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn"><buton>Read More</buton></a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/projects/soon-capa.png" alt="capa-portfolio">
+                            <div class="info">
+                                <h5>Heading</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn"><button>Read More</button></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <hr>
-        <section id="skills">
-            <div class="container">
-                    <div class="first-child-skills col-12">
-                        <h2><span>Minhas </span>habilidades.</h2>
-                    </div>
-                    <div class="container skills-1">
-                        <div class="row">
-                            <div class="second-child-skills col-4">
-                                <h4><strong>Minha missão é criar projetos:</strong></h4>
-                                <div class="fast">
-                                    <div>
-                                        <img src="imagens/page-4/velocidade-icon.png" alt="fast-icon">
-                                        <h6><strong>RÁPIDOS</strong></h6>
-                                    </div>
-                                    <p>com interações e carregamentos sem atrasos.</p>
-                                </div>
-                                <div class="responsive">
-                                    <div>
-                                        <img src="imagens/page-4/responsividade-icon.png" alt="responsive-icon">
-                                        <h6><strong>RESPONSIVOS</strong></h6>
-                                    </div>
-                                    <p>com layouts que irão funcionar em qualquer dispositivo, grande ou pequeno.</p>
-                                </div>
-                                <div class="intuitive">
-                                    <div>
-                                        <img src="imagens/page-4/intuitivo-icon.png" alt="intuitive-icon">
-                                        <h6><strong>INTUITIVOS</strong></h6>
-                                    </div>
-                                    <p>de fácil usabilidade, valorizando a experiência do usuário.</p>
-                                </div>
-                                <div class="dynamic">
-                                    <div>
-                                        <img src="imagens/page-4/dinamico-icon.png" alt="dynamic-icon">
-                                        <h6><strong>DINÂMICOS</strong></h6>
-                                    </div>
-                                    <p>dando mais vida a página, pois os sites não precisam ser estáticos.</p>
-                                </div>
+        
+        <section id="skills" class="sec-4 show-animate">
+            <div class="container animate">
+                <div class="first-child-skills col-12">
+                    <h2><span>Minhas </span>habilidades.</h2>
+                </div>
+                <div class="row">
+                    <!-- qualidade dos projetos -->
+                    <div class="second-child-skills col-4 offset-1">
+                        <h4><strong>Minha missão é criar projetos:</strong></h4>
+                        <div class="fast">
+                            <div>
+                                <img src="imagens/skills/velocidade-icon.png" alt="fast-icon">
+                                <h6><strong>RÁPIDOS</strong></h6>
                             </div>
-                            <div class="third-child-skills col-8">
-                                <h4><strong>E para isso, invisto tempo e esforço em tecnologias como:</strong></h4>
-                                <div class="skills-2">
-                                    <div><img src="imagens/page-4/html5-logo-72.png" alt="html5-icon"><p>HTML 5</p></div>
-                                    <div><img src="imagens/page-4/css3-logo-72.png" alt="css3-icon"><p>CSS 3</p></div>
-                                    <div><img src="imagens/page-4/javascript-logo-72.png" alt="javascript-icon"><p>Javascript</p></div>
-                                    <div><img src="imagens/page-4/bootstrap-logo-72.png" alt="bootstrap-icon"><p>Bootstrap</p></div>
-                                    <div><img src="imagens/page-4/figma-icon.png" alt="figma-icon"><p>Figma</p></div>
-                                </div>
-                                <div class="skills-3">
-                                    <div><img src="imagens/page-4/photoshop-logo.png" alt="photoshop-icon"><p>Photoshop</p></div>
-                                    <div><img src="imagens/page-4/my-sql-icon.png" alt="my-sql-icon"><p>MY SQL</p></div>
-                                </div>
+                            <p>com interações e carregamentos sem atrasos.</p>
+                        </div>
+                        <div class="responsive">
+                            <div>
+                                <img src="imagens/skills/responsividade-icon.png" alt="responsive-icon">
+                                <h6><strong>RESPONSIVOS</strong></h6>
                             </div>
+                            <p>com layouts que irão funcionar em qualquer dispositivo, grande ou pequeno.</p>
+                        </div>
+                        <div class="intuitive">
+                            <div>
+                                <img src="imagens/skills/intuitivo-icon.png" alt="intuitive-icon">
+                                <h6><strong>INTUITIVOS</strong></h6>
+                            </div>
+                            <p>de fácil usabilidade, valorizando a experiência do usuário.</p>
+                        </div>
+                        <div class="dynamic">
+                            <div>
+                                <img src="imagens/skills/dinamico-icon.png" alt="dynamic-icon">
+                                <h6><strong>DINÂMICOS</strong></h6>
+                            </div>
+                            <p>dando mais vida a página, pois os sites não precisam ser estáticos.</p>
                         </div>
                     </div>
+                    <div class="third-child-skills col-lg-12 col-xl-6 justify-content-center">
+                        <!-- tecnologias usadas -->
+                        <h4><strong>E para isso, invisto tempo e esforço em tecnologias como:</strong></h4>
+                        <div class="skills-1">
+                            <div><img src="imagens/skills/html5-logo-72.png" alt="html5-icon"><p>HTML 5</p></div>
+                            <div><img src="imagens/skills/css3-logo-72.png" alt="css3-icon"><p>CSS 3</p></div>
+                            <div><img src="imagens/skills/javascript-logo-72.png" alt="javascript-icon"><p>Javascript</p></div>
+                            <div><img src="imagens/skills/bootstrap-logo-72.png" alt="bootstrap-icon"><p>Bootstrap</p></div>
+                            <div><img src="imagens/skills/figma-icon.png" alt="figma-icon"><p>Figma</p></div>
+                        </div>
+                        <div class="skills-2">
+                            <div><img src="imagens/skills/photoshop-logo.png" alt="photoshop-icon"><p>Photoshop</p></div>
+                            <div><img src="imagens/skills/my-sql-icon.png" alt="my-sql-icon"><p>MY SQL</p></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <hr>
-        <section id="contact">
-            <div class="container">
-                <div class="first-child-contact col-6">
+        
+        <section id="contact" class="sec-5 show-animate">
+            <div class="container animate">
+                <div class="first-child-contact col-xl-6">
                     <h2><span>Formas de </span>contato.</h2>
                     <h4>Tem uma pergunta, proposta ou apenas deseja dizer um oi? <br>
                         Para me encontrar é bem simples.</h4>
                 </div>
             </div>
-            <div class="container">
+            <div class="container animate">
                 <div class="row">
-                    <div class="second-child-contact col-6">
-                        <h5>Me siga nas redes sociais</h5>
-                        <div>
+                    <div class="second-child-contact col-md-12 col-lg-6">
+                        <!-- redes sociais -->
+                        <div class="social-contact">
+                            <h5>Me siga nas redes sociais</h5>
                             <a href="#">Github /</a> 
                             <a href="#">Linkedin /</a> 
                             <a href="#">Whatsapp</a>
                         </div>
-                    </div>
-                    <div class="third-child-contact col-6">
-                        <h5>Ou envie um e-mail para</h5>
-                        <div>
-                            <a href="#"><img src="imagens/page-1/envelope-regular-36.png" alt="mail-icon">victormoreirafin@gmail.com</a>
+                        <!-- e-mail para contato -->  
+                        <div class="mail-contact">
+                            <h5>Ou envie um e-mail para</h5>
+                            <a href="#"><img src="imagens/home/envelope-regular-36.png" alt="mail-icon">victormoreirafin@gmail.com</a>
                         </div>
+                    </div>
+                    <!-- imagem despedida -->
+                    <div class="third-child-contact col-6">
+                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                        <lottie-player src="https://lottie.host/a3bdb3b9-e956-4d2f-956b-8f5c08544133/7iuUFKsrD5.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></lottie-player>
                     </div>
                 </div>
             </div>
@@ -229,5 +270,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
