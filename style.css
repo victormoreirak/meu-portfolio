@@ -329,7 +329,7 @@ header.scroll-down .nav-list .logo-icon {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 50px;
-    height: 55vh;
+    height: 60vh;
 }
 
 .card {
@@ -518,6 +518,12 @@ footer {
 
 /* responsive design */
 
+@media(max-width: 1400px) {
+    .wrapper {
+        height: 120vh;
+    }
+}
+
 @media(max-width: 1200px) {
     .nav-list .links,
     .nav-list .btn-contact button,
@@ -573,6 +579,10 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         flex-wrap: wrap;
     }
+
+    .wrapper {
+        height: 150vh;
+    }
 }
 
 @media(max-width: 768px) {
@@ -582,13 +592,6 @@ footer {
 
     #contact .third-child-contact {
         display: none;
-    }
-}
-
-@media(max-width: 576px) {
-    .dropdown_menu {
-        left: 2rem;
-        width: unset;
     }
 
     h1 {
@@ -631,6 +634,13 @@ footer {
 
     .second-child-footer {
         padding-right: 20px;
+    }
+}
+
+@media(max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
     }
 }
 
