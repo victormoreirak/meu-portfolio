@@ -590,6 +590,26 @@ footer {
         left: 2rem;
         width: unset;
     }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    .wrapper {
+        height: 120vh;
+    }
+
+    #skills .third-child-skills .skills-1 {
+        width: 89%;
+    }
 }
 
 @keyframes bouncing {
