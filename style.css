@@ -573,6 +573,15 @@ footer {
 }
 
 @media(max-width: 976px) {
+    h2 {
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 1em;
+        text-align: center;
+    }
+
     #skills .third-child-skills .skills-1,
     #skills .third-child-skills .skills-2 {
         display: grid;
@@ -583,15 +592,19 @@ footer {
     .wrapper {
         height: 150vh;
     }
-}
 
-@media(max-width: 768px) {
     #contact .second-child-contact {
         margin: 50px 0;
     }
 
     #contact .third-child-contact {
         display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    #contact .second-child-contact {
+        margin: 50px 0;
     }
 
     h1 {
@@ -642,6 +655,22 @@ footer {
         left: 2rem;
         width: unset;
     }
+
+    #contact .second-child-contact {
+        font-size: .8em;
+    }
+}
+
+@media(max-width: 336px) {
+    #skills .third-child-skills .skills-1 {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+
+    #skills .third-child-skills .skills-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @keyframes bouncing {
@@ -649,3 +678,4 @@ footer {
         transform: translateY(10px);
     }
 }
+
