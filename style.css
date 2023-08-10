@@ -115,7 +115,7 @@ h3 {
 
 h4 {
     color: var(--cor3);
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 /* menu scroll down */
@@ -318,10 +318,15 @@ header.scroll-down .nav-list .logo-icon {
 }
 
 #about .third-child-about img {
-    width: 300px;
+    width: 250px;
 }
 
 /* projects */
+
+.first-child-projects a {
+    text-decoration: none;
+    color: var(--cor4);
+} 
 
 .wrapper {
     display: flex;
