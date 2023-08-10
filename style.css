@@ -575,6 +575,10 @@ footer {
         display: flex;
         justify-content: center;
     }
+
+    .second-child-about {
+        width: 90%;
+    }
 }
 
 @media(max-width: 976px) {
