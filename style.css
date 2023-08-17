@@ -500,6 +500,11 @@ header.scroll-down .nav-list .logo-icon {
     text-decoration: none;
 }
 
+#contact .second-child-contact .mail-contact p {
+    font-size: 1.3em;
+    color: var(--cor4);
+}
+
 #contact .third-child-contact {
     display: flex;
     justify-content: center;
