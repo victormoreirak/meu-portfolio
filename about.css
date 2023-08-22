@@ -1,0 +1,15 @@
+#about .second-child-about p {
+    display: grid;
+    align-items: center;
+    margin-top: 16px;
+}
+
+#about .third-child-about {
+    display: grid;
+    align-items: center;
+    justify-content: end;
+}
+
+#about .third-child-about img {
+    width: 250px;
+}

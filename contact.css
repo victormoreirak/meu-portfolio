@@ -1,0 +1,31 @@
+#contact h5 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+#contact .second-child-contact {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+#contact .second-child-contact .social-contact {
+    margin-bottom: 60px;
+}
+
+#contact .second-child-contact div a {
+    margin-right: 10px;
+    font-size: 1.3em;
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+#contact .second-child-contact .mail-contact p {
+    font-size: 1.3em;
+    color: var(--cor4);
+}
+
+#contact .third-child-contact {
+    display: flex;
+    justify-content: center;
+}
